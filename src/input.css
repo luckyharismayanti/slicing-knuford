@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+header {
+    background-image: url(./assets/background-knuford.webp);
+    background-size: cover;
+    height: 500px;
+}
+
+.mycontainer {
+    @apply w-[90vw] mx-auto;
+}
+
+#halah {
+    position: relative;
+}
+
+#halah div {
+    background-image: url(https://preview.colorlib.com/theme/knuford/images/about.jpg.webp);
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    margin: 0 0 0 auto;
+    height: 660px;
+}
+
+#halah::before {
+    content: '';
+    background-color: rgb(202, 8, 8);
+    position: absolute;
+    bottom: 20%;
+    right: 100px;
+    z-index: -1;
+}
+
+#halah::after {
+    content: '';
+    background-color: absolute;
+    bottom: 5%;
+    right: 100px;
+    left: 15%;
+    height: 100px;
+    z-index: -1;
+}
+
+.deschover:hover .desc {
+    display: flex;
+}
+
+.fotomassai:hover * {
+color: white;
+}
+
+.fotomassai:hover {
+    @apply bg-primary;
+}
+
